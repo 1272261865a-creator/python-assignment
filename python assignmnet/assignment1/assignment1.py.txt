@@ -1,0 +1,20 @@
+print("--- Dictionary Operations ---")
+
+user_profile = { "username": "coder123", "role": "Developer" } print(f"Initial Dictionary: {user_profile}")
+
+user_profile["status"] = "Active"
+
+user_profile.update({"country": "USA", "role": "Senior Developer"}) print(f"After Append/Update: {user_profile}")
+
+del user_profile["country"]
+
+removed_role = user_profile.pop("role") print(f"Removed Role: {removed_role}") print(f"After Removal: {user_profile}\n")
+
+print("--- Tuple Operations ---")
+
+coordinates = (10, 20, 30) print(f"Initial Tuple: {coordinates}")
+
+coordinates = coordinates + (40,) print(f"After Append (via Concatenation): {coordinates}")
+
+temp_list = list(coordinates) temp_list.remove(20)
+coordinates = tuple(temp_list) print(f"After Removal (via List Conversion): {coordinates}")
